@@ -1,6 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Chat UI
 
-## Getting Started
+This is a UI for use with AI chatbots started using create-next-app. This is based on the bare-bones next.js in order to keep complexity to a minimum.
+
+## Implementation Steps
+
+If you do not already have the dependencies necessary to run a Next.js app locally, if you are on a Mac:
+
+### Install Yarn (optional)
+
+Installation instructions at:
+https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
+
+### Install Node (required)
+
+If you are new to Node, it is recommended to use a Node Version Manager instead of installing Node directly. This makes it easier to maintain your Node environment as well as switch between versions for different projects.
+
+Installation instructions at https://github.com/nvm-sh/nvm
+
+### Clone the repository:
+
+```
+git clone git@github.com:Federated-GraphRAG/chat-ui.git
+```
+### Set up environment variables.
+
+If you are going to be using an LLM, you will need to create a .env file at the root and add your API keys. See the file dotenv.example.txt for an easy copy/paste sample of what you will need.
+
+Note that if you just want to test the UI, you do not need an API key.
+
+### Set up the project
+Use npm to install the necessary packages.
+```
+npm install
+```
+
+### Run the UI
 
 First, run the development server:
 
@@ -16,24 +50,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+There are mock API responses ready to go for you to test the UI without needing to implement a back-end. Preface your prompt with `mock`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For example: `mock: What are the influenza trends?`
 
-## Learn More
+You can start editing the pages by modifying any page.tsx file, for example `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# federated-graph-rag-front-end
-# federated-graph-rag-front-end
-# chat-ui
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel. While the package is included in package.json, the font itself is not imported into any file. This will allow you to run and test the project completely offline as you get started.

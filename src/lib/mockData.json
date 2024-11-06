@@ -1,0 +1,22 @@
+{
+    "influenzaTrends": {
+      "labels": ["2014-2015", "2015-2016", "2016-2017", "2017-2018", "2018-2019"],
+      "datasets": [
+        {
+          "label": "Influenza A",
+          "data": [15000, 12000, 18000, 22000, 19000]
+        },
+        {
+          "label": "Influenza B",
+          "data": [5000, 8000, 6000, 9000, 7000]
+        }
+      ]
+    },
+    "regionalComparison": [
+      { "region": "Bay Area", "cases": 5000 },
+      { "region": "Central", "cases": 3500 },
+      { "region": "Lower Southern", "cases": 6000 },
+      { "region": "Northern", "cases": 2500 },
+      { "region": "Upper Southern", "cases": 5500 }
+    ]
+  }

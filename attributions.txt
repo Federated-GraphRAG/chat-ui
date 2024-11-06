@@ -1,0 +1,1 @@
+favicon="<a href="https://www.flaticon.com/free-icons/knowledge-graph" title="knowledge graph icons">Knowledge graph icons created by Grafixpoint - Flaticon</a>"
